@@ -1,0 +1,17 @@
+{
+    "1": {
+        "url":"https://b95d7a.kljlwsf.cc/?target=-7EBNQCgQAAAfvAwED2YEABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx", 
+        "countries": ["IN"], 
+        "user_agents": ["Android"]
+    },
+    "2": {
+        "url":"https://kosmo.link/kosmolot/fresh-games?refcode=p19207p3180910p97b2&subid={affiliate_id}&clickid={click_id}", 
+        "countries": ["RU", "Not found"], 
+        "user_agents": ["Chrome"]
+    },
+    "3": {
+        "url":"https://kosmo.link/kosmolot/pharaohs-gold?refcode=p19207p3181563p15e6&subid={affiliate_id}&clickid={click_id}", 
+        "countries": ["RU", "Not found"], 
+        "user_agents": ["Chrome"]
+    }
+}

@@ -1,0 +1,51 @@
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-messaging.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDupVPtJAQ_2csaCwcS66XM7OkAdyk4dEw",
+        authDomain: "test1211-7b1d8.firebaseapp.com",
+        projectId: "test1211-7b1d8",
+        storageBucket: "test1211-7b1d8.appspot.com",
+        messagingSenderId: "53893167055",
+        appId: "1:53893167055:web:b55dbd805ddc9e35d404ba",
+        measurementId: "G-SK2Q1M1W5F"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const messaging = firebase.messaging()
+
+    messaging.getToken({vapidKey: 'BI4HIQl8aZnXKDrEDB8xixu_E3vfODhD38CZKntyymPuff3Sdl99WfY44FOMdbEueahnG0rOSIWYhD8yn6VHbaw'}).then(function(token){
+    console.log('function: ' + token)
+    $.ajax({
+        type: "POST", // метод HTTP, используемый для запроса	
+        url: "/reg_user", // строка, содержащая URL адрес, на который отправляется запрос
+        data: {'token': token}, // данные, которые будут отправлены на сервер
+        //success: success, // функция обратного вызова, которая вызывается если AJAX запрос выполнится успешно
+        //dataType: "dataType" // тип данных, который вы ожидаете получить от сервера	
+        });
+    });
+    
+    //messaging.requestPermission().then(function(){
+        //console.log('hey')
+    //}).then(function(token){
+        //console.log(token)
+    //})
+
+    messaging.onMessage(function(payload) {
+        console.log(payload)
+    })
+
+    /*messaging.onTokenRefresh(function(){
+        messaging.getToken().then(function(newToken){
+            console.log("New token: " + newToken);
+        })
+        .catch(function(reason){
+            console.log(reason);
+        })
+    })*/
+</script>
+<iframe src="{{ url }}" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe>

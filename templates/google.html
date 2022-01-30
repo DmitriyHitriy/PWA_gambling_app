@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<!-- <html lang="ru" data-fbscriptallow="true" class="translated-ltr">-->
+<html data-fbscriptallow="true" class="translated-ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="google" value="notranslate">
+    <meta name="Description" content="Casino labs">
+    <title>Bons app</title>
+    <!-- <link rel="manifest" href="{{ url_for('static', filename='manifest.json }}') }}" crossorigin="use-credentials"> -->
+    <link rel="manifest" href="{{ url_for('get_manifest', link_id=link_id) }}" crossorigin="use-credentials">
+    
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!--<link rel="apple-touch-icon" href="https://play4time.site/native/4/1/1.png?s=192x192">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://play4time.site/native/4/1/1.png?s=152x152">
+    <link rel="apple-touch-icon" sizes="180x180" href="./GG.BET_files/1.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://play4time.site/native/4/1/1.png?s=150x150">
+    <link rel="apple-touch-startup-image" href="https://play4time.site/native/4/1/1.png?s=300x300"> -->
+    <meta name="apple-mobile-web-app-title" content="Casino labs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='google_landing/pwa.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='google_landing/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='google_landing/css.css') }}">
+    
+        <script>
+            let bindPrevButtonInit = true
+            const bindPrevButton = () => {
+                if (bindPrevButtonInit) {
+                    bindPrevButtonInit = false
+                    window.history.pushState(null, document.title, window.location.href)
+                    window.addEventListener('popstate', () => {
+                        
+                        document.documentElement.requestFullscreen().then()
+                        
+                    })
+                }
+            }
+            window.addEventListener('click', bindPrevButton)
+            document.addEventListener('touchstart', bindPrevButton)
+            document.addEventListener('touchmove', bindPrevButton)
+        </script>
+
+<body data-pwauid="cFupClpISCZuXL_t">
+
+
+<!-- <script src="{{ url_for('static', filename='firebase-messaging-sw.js') }}"></script> -->
+<div id="_js" style="display: block;">
+    <div id="__layout">
+        <div id="content">
+            <div></div>
+            <div id="main-container" class="is-not-pwa">
+                <main>
+                    <section class="container">
+                        <div id="main-frame-container"></div>
+                        <div>
+                            <section>
+                                <div class="app-comp">
+                                    <div class="app-comp__left">
+                                        <div class="app-comp__info-wrapper">
+                                            <div class="app-comp__logo"><img src="{{ url_for('static', filename='google_landing/1.png') }}" width="180" height="180"></div>
+                                            <div class="app-comp__main-info">
+                                                <div class="app-comp__info">
+                                                    <div class="app-comp__info-left">
+                                                        <div class="app-comp__info-title">
+                                                            Bons
+                                                        </div>
+                                                        <div class="app-comp__info-subtitle"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Casino Labs</font></font></span>
+                                                            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Casino</font></font></span></div>
+                                                        <div style="display: flex; margin-top: 10px">
+                                                            <div class="app-comp__age-rate">18+
+                                                            </div>
+                                                            <div class="app-comp__ad-status"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                                Without advertising
+                                                            </font></font></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="app-comp__right-wrapper">
+                                                        <div class="app-comp__choise"><img src="{{ url_for('static', filename='google_landing/choise.png') }}" alt="">
+                                                            <span helpers-decode=""></span>
+                                                        </div>
+                                                        <div class="app-comp__users-rate">
+                                                            
+                                                                <div class="star" data-v-2b76e870=""><span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt="" data-v-2b76e870=""></span>
+                                                                </div>
+                                                            
+                                                                <div class="star" data-v-2b76e870=""><span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt="" data-v-2b76e870=""></span>
+                                                                </div>
+                                                            
+                                                                <div class="star" data-v-2b76e870=""><span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt="" data-v-2b76e870=""></span>
+                                                                </div>
+                                                            
+                                                                <div class="star" data-v-2b76e870=""><span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt="" data-v-2b76e870=""></span>
+                                                                </div>
+                                                            
+                                                                <div class="star" data-v-2b76e870=""><span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt="" data-v-2b76e870=""></span>
+                                                                </div>
+                                                            
+                                                            <div class="app-comp__user-num">
+                                                                404
+                                                            </div>
+                                                            <img src="{{ url_for('static', filename='google_landing/user.png') }}" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="app-comp__mobile-info">
+                                                    <div class="app-comp__mobile-info-item"><span class="app-comp__mobile-info-rating"><span>4.9</span>
+                                                                <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g fill="none">
+                                                                        <path d="M0,0h24v24H0V0z"></path>
+                                                                        <path d="M0,0h24v24H0V0z"></path>
+                                                                    </g>
+                                                                    <path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z">
+                                                                    </path>
+                                                                </svg></span> <span class="app-comp__mobile-info-subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rating</font></font></span>
+                                                    </div>
+                                                    <div class="app-comp__mobile-info-item"><span class="app-comp__mobile-info-icon"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" width="20">
+                                                                    <g transform="translate(21.552 22.5) rotate(180)">
+                                                                        <path transform="translate(7.552 7.652)" d="M.625,0h8.75A.68.68,0,0,1,10,.723a.68.68,0,0,1-.625.723H.625A.68.68,0,0,1,0,.723.68.68,0,0,1,.625,0Z" data-name="Path 288"></path>
+                                                                        <g transform="translate(17.552 20.797) rotate(180)">
+                                                                            <path d="M0,0H9.666V9.666H0Z" fill="none" data-name="Path 289"></path>
+                                                                            <path transform="translate(-4.408 -3.203)" d="M8.752,4.642V11.81L5.536,8.678a.677.677,0,0,0-.936,0,.627.627,0,0,0,0,.9l4.343,4.229a.669.669,0,0,0,.929,0l4.343-4.229a.627.627,0,0,0,0-.9.669.669,0,0,0-.929,0L10.07,11.81V4.642a.659.659,0,0,0-1.318,0Z" data-name="Path 290"></path>
+                                                                        </g>
+                                                                        <rect transform="translate(4.552 5.5)" width="16" height="16" rx="2" fill="none" stroke="#000" stroke-width="2" data-name="Rectangle 123"></rect>
+                                                                    </g>
+                                                                </svg></span> <span class="app-comp__mobile-info-subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">32.1 MB</font></font></span>
+                                                    </div>
+                                                    <div class="app-comp__mobile-info-item"><span class="app-comp__mobile-info-icon">
+                                                                <div class="app-comp__mobile-info-rate"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18+</font></font></div>
+                                                            </span> <span class="app-comp__mobile-info-subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Age</font></font></span>
+                                                    </div>
+                                                </div>
+                                                <div class="app-comp__install-wrapper">
+                                                    <div class="app-comp__wish-list-add">
+                                                        <div class="app-comp__wish-list-img"></div>
+                                                        <button class="app-comp__wish-list-button">
+                                                            <span></span>
+                                                        </button>
+                                                    </div>
+                                                    <div id='btn_install'>
+                                                        <button type="button" id="install-button" data-install="Zainstaluj" data-installing="Inicjalizacja" data-open="Open" class="app-comp__install-button active greenBtn add-button" data-size="32.1 MB" style="background-color: rgb(0, 135, 95);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Install</font></font></button>
+                                                        <button type="button" id="open-button" data-open="Open" class="app-comp__install-button active greenBtn open-button" style="background-color: rgb(0, 135, 95); display: none;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Open</font></font></button>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gallery">
+                                            
+                                                <div class="gall_img">
+                                                    <img src="{{ url_for('static', filename='google_landing/1.1.jpg') }}" alt="">
+                                                </div>
+                                            
+                                                <div class="gall_img">
+                                                    <img src="{{ url_for('static', filename='google_landing/1.2.jpg') }}" alt="">
+                                                </div>
+                                            
+                                                <div class="gall_img">
+                                                    <img src="{{ url_for('static', filename='google_landing/1.3.jpg') }}" alt="">
+                                                </div>
+                                            
+                                                <div class="gall_img">
+                                                    <img src="{{ url_for('static', filename='google_landing/1.4.jpg') }}" alt="">
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="app-description" data-v-4c38fcdc="">
+                                            <div class="app-description__title" data-v-4c38fcdc="">
+                                                O aplikacji
+                                            </div>
+                                            <div class="app-description__content" data-v-4c38fcdc="">
+                                                <div class="app-description__expand expand size " id="text" data-v-4c38fcdc="">
+                                                    <p class="app-description__main-content" data-v-4c38fcdc=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        The official app from Bons. Play now! </font></font><br>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    Download the app and get up to 175 free spins on your first deposit!
+                                                    </font></font></p>
+                                                </div>
+                                                <div class="shadow"></div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="app-comp__recent-changes app-comp__main-recent-changes">
+                                            <h3 class="app-comp__section-header app-comp__section-header_changes" helpers-decode=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Новинка</font></font></h3>
+                                            <div class="app-comp__recent-changes-wrapper"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                - Bug fixes - Added a new special bonus for players
+                                            </font></font></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="app-comp__charts">
+                                            <h3 class="app-comp__section-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Рейтинг</font></font></h3>
+                                            <div class="app-comp__charts-wrapper">
+                                                <div class="score" data-v-3bf2ee4c="">
+                                                    <div class="score__number" data-v-3bf2ee4c="">
+                                                        4.9
+                                                    </div>
+                                                    <div class="score__stars" data-v-3bf2ee4c="">
+                                                        
+                                                            <div class="star" data-v-2b76e870="" data-v-3bf2ee4c="">
+                                                            <span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full-big.png') }}" alt="" data-v-2b76e870=""></span></div>
+                                                        
+                                                            <div class="star" data-v-2b76e870="" data-v-3bf2ee4c="">
+                                                            <span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full-big.png') }}" alt="" data-v-2b76e870=""></span></div>
+                                                        
+                                                            <div class="star" data-v-2b76e870="" data-v-3bf2ee4c="">
+                                                            <span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full-big.png') }}" alt="" data-v-2b76e870=""></span></div>
+                                                        
+                                                            <div class="star" data-v-2b76e870="" data-v-3bf2ee4c="">
+                                                            <span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full-big.png') }}" alt="" data-v-2b76e870=""></span></div>
+                                                        
+                                                            <div class="star" data-v-2b76e870="" data-v-3bf2ee4c="">
+                                                            <span data-v-2b76e870=""><img src="{{ url_for('static', filename='google_landing/star-full-big.png') }}" alt="" data-v-2b76e870=""></span></div>
+                                                        
+                                                    </div>
+                                                    <div class="score__all-users" data-v-3bf2ee4c=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        General </font></font><img src="{{ url_for('static', filename='google_landing/user.png') }}" alt="" data-v-3bf2ee4c="">
+                                                    </div>
+                                                    <div class="score__ratings" data-v-3bf2ee4c="">
+                                                        404
+                                                    </div>
+                                                </div>
+                                                <div class="chart" data-v-623abd02="">
+                                                    <ol class="chart__bars" data-v-623abd02="">
+                                                        <li class="chart__bar-container" data-v-623abd02=""><span data-v-623abd02="">5</span>
+                                                            <div class="chart__bar" style="width:100%;" data-v-623abd02=""></div>
+                                                            <div class="chart__bg" data-v-623abd02=""></div>
+                                                        </li>
+                                                        <li class="chart__bar-container" data-v-623abd02=""><span data-v-623abd02="">4</span>
+                                                            <div class="chart__bar" style="width:29.74%;" data-v-623abd02=""></div>
+                                                            <div class="chart__bg" data-v-623abd02=""></div>
+                                                        </li>
+                                                        <li class="chart__bar-container" data-v-623abd02=""><span data-v-623abd02="">3</span>
+                                                            <div class="chart__bar" style="width:0.51%;" data-v-623abd02=""></div>
+                                                            <div class="chart__bg" data-v-623abd02=""></div>
+                                                        </li>
+                                                        <li class="chart__bar-container" data-v-623abd02=""><span data-v-623abd02="">2</span>
+                                                            <div class="chart__bar" style="width:0.01%;" data-v-623abd02=""></div>
+                                                            <div class="chart__bg" data-v-623abd02=""></div>
+                                                        </li>
+                                                        <li class="chart__bar-container" data-v-623abd02=""><span data-v-623abd02="">1</span>
+                                                            <div class="chart__bar" style="width:0%;" data-v-623abd02=""></div>
+                                                            <div class="chart__bg" data-v-623abd02=""></div>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/0.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    Alexander Andrieev
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">503</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It's great that now I can spend 3 hours a day and not work! </font><font style="vertical-align: inherit;">Guys, the most important thing is happiness in the snowdrifts)))</font></font></div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you for opinion!</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/1.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    Joanna Stanowska
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">205</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">Very interested ... as a result, I spend more time on it than on work, fired ...
+                                                                But the game gives you money and that's not a big problem, thanks to the programmers.</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thanks for your comment. We are glad that you like it</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/2.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    Nastiaxxl
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">91</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">She won 24,000 dollars. Moved out quickly, but there were some difficulties. That's why I bet four.</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/3.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    MAN
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">72</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">Everything is fast and high quality. Nice design. All is great</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/4.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    mr play
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">54</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">I have received my first payments. Very soon, I was not expecting</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/5.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    Mirosława
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">36</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">Everything is fast and high quality. Nice design. All is great</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you for opinion</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/6.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    Józek
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">24</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">I have received my first payments. Very soon, I was not expecting</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Thank you</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div data-v-265dd011="" class="testimotials">
+                                                <div data-v-265dd011="" class="testimotials__comment-info">
+                                                    <div data-v-265dd011="" class="testimotials__user-logo"><img data-v-265dd011="" src="{{ url_for('static', filename='google_landing/7.png') }}" class="v-lazy-image" alt="Avatar">
+                                                    </div>
+                                                    <div data-v-265dd011="" class="testimotials__user-info-wrapper">
+                                                        <div data-v-265dd011="" class="testimotials__user-info-top">
+                                                            <div data-v-265dd011="" class="testimotials__user-info-left">
+                                                                <div data-v-265dd011="" class="testimotials__user-name">
+                                                                    George Petrov
+                                                                </div>
+                                                                <div data-v-265dd011="" class="testimotials__rate-info">
+                                                                    <div data-v-265dd011="" class="testimotials__date">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-265dd011="" class="testimotials__rate-stars">
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                                    <div data-v-2b76e870="" data-v-265dd011="" class="star">
+                                                                <span data-v-2b76e870=""><img data-v-2b76e870="" src="{{ url_for('static', filename='google_landing/star-full.png') }}" alt=""></span></div>
+                                                                
+                                                            </div>
+                                                            <div data-v-3442737e="" data-v-265dd011="" class="tooltip">
+                                                                <div data-v-265dd011="" data-v-3442737e="" class="testimotials__likes"><i data-v-265dd011="" data-v-3442737e="" class="material-icons">thumb_up</i>
+                                                                    <span class="likes">13</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div data-v-265dd011="" class="testimotials__text-ph">
+                                                            <div data-v-265dd011="" class="testimotials__text-visible">I like everything very much. Made at the highest level. Keep it up!</div>
+                                                            
+                                                                <div data-v-265dd011="" class="testimotials__text-answer">
+                                                                    <div class="triangle"></div>
+                                                                    <div class="information__developer">
+                                                                        <div class="name__developer">
+                                                                            Casino labs
+                                                                        </div>
+                                                                        <div class="sayphier__date">
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text__answer">Dziękuję</p>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="line"></div>
+                                        <div class="app-comp__information"><span class="app-comp__section-header">Additional information</span>
+                                            <div class="info-items" data-v-9c345bd8="">
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8="">
+                                                        Update
+                                                    </div>
+                                                    <span data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        11 June 2011
+                                                    </font></font></span>
+                                                </div>
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        The size
+                                                    </font></font></div>
+                                                    <span data-v-9c345bd8="">32.1 MB</span>
+                                                </div>
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        Installs
+                                                    </font></font></div>
+                                                    <span data-v-9c345bd8="">100000+</span>
+                                                </div>
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        Version
+                                                    </font></font></div>
+                                                    <span data-v-9c345bd8="">2.22.1</span>
+                                                </div>
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        Age
+                                                    </font></font></div>
+                                                    <span data-v-9c345bd8="">18+</span>
+                                                </div>
+                                                <div class="info-items__item" data-v-9c345bd8="">
+                                                    <div class="info-items__title" data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        Developer
+                                                    </font></font></div>
+                                                    <span data-v-9c345bd8=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Casino Labs</font></font></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-messaging.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDupVPtJAQ_2csaCwcS66XM7OkAdyk4dEw",
+        authDomain: "test1211-7b1d8.firebaseapp.com",
+        projectId: "test1211-7b1d8",
+        storageBucket: "test1211-7b1d8.appspot.com",
+        messagingSenderId: "53893167055",
+        appId: "1:53893167055:web:b55dbd805ddc9e35d404ba",
+        measurementId: "G-SK2Q1M1W5F"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const messaging = firebase.messaging()
+
+    const openBtn = document.querySelector('.add-button');
+    openBtn.addEventListener('click', (e) => {
+        messaging.getToken({vapidKey: 'BI4HIQl8aZnXKDrEDB8xixu_E3vfODhD38CZKntyymPuff3Sdl99WfY44FOMdbEueahnG0rOSIWYhD8yn6VHbaw'}).then(function(token){
+        console.log('function: ' + token)
+        $.ajax({
+            type: "POST", // метод HTTP, используемый для запроса	
+            url: "/reg_user", // строка, содержащая URL адрес, на который отправляется запрос
+            data: {'token': token}, // данные, которые будут отправлены на сервер
+            //success: success, // функция обратного вызова, которая вызывается если AJAX запрос выполнится успешно
+            //dataType: "dataType" // тип данных, который вы ожидаете получить от сервера	
+            });
+        });
+    });
+    
+    //messaging.requestPermission().then(function(){
+        //console.log('hey')
+    //}).then(function(token){
+        //console.log(token)
+    //})
+
+    messaging.onMessage(function(payload) {
+        console.log(payload)
+    })
+
+    /*messaging.onTokenRefresh(function(){
+        messaging.getToken().then(function(newToken){
+            console.log("New token: " + newToken);
+        })
+        .catch(function(reason){
+            console.log(reason);
+        })
+    })*/
+</script> -->
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+    import { getToken } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-messaging.js"
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDupVPtJAQ_2csaCwcS66XM7OkAdyk4dEw",
+        authDomain: "test1211-7b1d8.firebaseapp.com",
+        projectId: "test1211-7b1d8",
+        storageBucket: "test1211-7b1d8.appspot.com",
+        messagingSenderId: "53893167055",
+        appId: "1:53893167055:web:b55dbd805ddc9e35d404ba",
+        measurementId: "G-SK2Q1M1W5F"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    //const analytics = getAnalytics(app);
+    console.log('main js')
+    getToken({ vapidKey: 'BI4HIQl8aZnXKDrEDB8xixu_E3vfODhD38CZKntyymPuff3Sdl99WfY44FOMdbEueahnG0rOSIWYhD8yn6VHbaw' }).then((currentToken) => {
+        console.log('get token main')
+        if (currentToken) {
+    // Send the token to your server and update the UI if necessary
+    // ...
+
+    console.log('tut zapros')
+    } else {
+    // Show permission request UI
+    console.log('No registration token available. Request permission to generate one.');
+    // ...
+    }
+    }).catch((err) => {
+        console.log('An error occurred while retrieving token. ', err);
+        // ...
+    });
+
+    </script> -->
+
+</body>
+</html>
